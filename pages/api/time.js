@@ -1,7 +1,5 @@
 // Get request
 
-import { Timestamp } from "mongodb";
-
 function currentTime() {
   let date = new Date();
   let hours = date.getHours();

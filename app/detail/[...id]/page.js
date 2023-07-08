@@ -1,12 +1,7 @@
 import { connectDB } from "@/util/database";
 import { ObjectId } from "mongodb";
-import Link from "next/link";
-import { useParams } from "next/navigation";
-import DetailLink from "./detailLink";
-import BackBtn from "@/app/backBtn";
-import Comment from "./comment";
+
 import { notFound } from "next/navigation";
-import LoginSidebar from "@/app/components/loginSidebar/loginSidebar";
 import DetailContent from "./detailContent";
 
 export default async function Detail(props) {

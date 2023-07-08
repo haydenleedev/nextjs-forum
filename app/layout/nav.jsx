@@ -5,10 +5,12 @@ import LoginBtn from "../loginBtn";
 import { useCallback, useEffect, useState } from "react";
 
 export default function Navbar(props) {
-  const [scrollY, setScrollY] = useState(window);
+  const [scrollY, setScrollY] = useState(0);
+
   const onScroll = useCallback((event) => {
-    console.log("scrollY", window.scrollY);
-    setScrollY(window.scrollY);
+    if (window !== undefined) {
+      setScrollY(window.scrollY);
+    }
   }, []);
 
   useEffect(() => {
